@@ -7,11 +7,13 @@
         <script src="myjava.js" defer></script>
     </head>
     <body>
+        
         <div class="btns">
             <button id="reset">reset</button>
         </div>
         <div class="sliderAndValue">
-            <input type="range" min="2" max="100" value="16" id="slider">
+            <!-- 'input' creates space for the user to input data, 'id=slider' lets the range set a value, 'type=range' creates the scrolling feature.  -->
+            <input id="slider" type="range" min="2" max="100" value="16">
             <p class="value">16</p>
         </div>
         <div class="grid"></div>
