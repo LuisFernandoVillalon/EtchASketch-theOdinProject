@@ -1,51 +1,11 @@
-/* Assigns a flex container to the whole page, centering everything inside of it in a column, with background color. */
-body { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(240, 240, 37);
-    
+body {
+    background-color: yellow;
 }
-/* Flex container for a set of buttons to be spaced evenly, with row direction. The container has a width of 700px and a height of 50px.*/
-.btns {
-    display: flex;
-    flex-direction: row;
-    width: 700px;
-    height: 50px;
-    justify-content: space-evenly;
-}
-/* Gives all divs with 'button' the following attributes, box-shadow gives the effect the div provides a shodow. */
-button { 
-    width: 80px;
-    font-size: 30px;
+.grid {
     background-color: white;
-    box-shadow: 5px 5px;
-}
-/* Flex container, aligns items and contents, in a row directions. */
-.sliderAndValue{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-}
-/* Assigns atributes to the value the slider is providing. */
-.value{
-    font-size: 30px;
-    padding-left: 10px;
-    color: black;
-    text-shadow: 2px 2px white;
-}
-/* The container for the grid.  */
-.grid{
-    margin-top: 50px;
-    /* The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension
-     - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.  */
     display: inline-grid;
-    /* Repeats 16 columns of size 2fr. */
-    grid-template-columns: repeat(16, 2fr);
-    /* Repeats 16 rows of size 2fr. */
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr) ;
     border: 5px solid white;
     border-radius: 5px;
     height: 575px;
@@ -53,8 +13,34 @@ button {
     background-color: gray;
     box-shadow: 10px 10px;
 }
-/* The cells used to full up the grid. */
-.cell{
-    background-color: white;
+.cell {
     border: 1px solid black;
+    background-color: white;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+}
+label {
+    font-size: 30px;
+    padding-left: 10px;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+.value  {
+    font-size: 30px;
+    padding-left: 10px;
+    color: black;
+    text-shadow: 2px 2px white;
+}
+button { 
+    width: 80px;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 5px 5px;
 }

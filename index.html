@@ -7,16 +7,18 @@
         <script src="myjava.js" defer></script>
     </head>
     <body>
-        
-        <div class="btns">
+        <div class="flex-container">
+          
             <button id="reset">reset</button>
+            
+            <div class="container">
+                <label for="slider">Number of cells in grid:</label>
+                <input type="range" id="slider" min="2" max="100" value="16">
+                <p class="value">16</p>
+            </div>
+
+            <div class="grid"></div>
         </div>
-        <div class="sliderAndValue">
-            <!-- 'input' creates space for the user to input data, 'id=slider' lets the range set a value, 'type=range' creates the scrolling feature.  -->
-            <input id="slider" type="range" min="2" max="100" value="16">
-            <p class="value">16</p>
-        </div>
-        <div class="grid"></div>
 
     </body>
 </html>
